@@ -702,6 +702,9 @@ abbr, abbr[title] {
 .greyBG{
   background-color:#e8ebef;
 }
+.transBG{
+  background-color: transparent;
+}
 ul{
   list-style-type: circle;
 }
@@ -715,6 +718,11 @@ ul{
 .columns,ul,li,b,span,b{
   font-size: 2.5vw;
 }
+.hero-section,.hero-section-text{
+  visibility: hidden;
+  margin-top: -40vw;
+}
+
 
 }
 .fade {
@@ -755,7 +763,7 @@ ul{
   text-align:center;
 }
 .hero-section {
-  background: url('../images/9962.jpg') 100% no-repeat;
+  background: url('../images/0026.jpg') 100% no-repeat;
   background-size: cover;
   height: 40vw;
 
@@ -776,6 +784,35 @@ ul{
   text-shadow: 1px 1px 5px #0a0a0a;
   font-family: 'Open Sans', sans-serif;
 }
+
+.hero-section-2 {
+  background: url('../images/9962.jpg') 100% no-repeat;
+  background-size: cover;
+  height: 40vw;
+
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-2 .hero-section-text-2 {
+  color: #fefefe;
+  text-shadow: 1px 1px 5px #0a0a0a;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
 
 figure {
   margin: 0; }

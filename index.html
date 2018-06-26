@@ -15,22 +15,28 @@ limitations under the License.
 -->
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pnatchev.com</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
     <link rel="shortcut icon" type="image/png" href="https://www.pnatchev.com/favicon.ico"/>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
-  <body style="font-family: 'Open Sans', sans-serif;">
+  <body ng-app="myApp" style="font-family: 'Open Sans', sans-serif;">
+
+
+
+
+
+
     <!-- start project -->
-
-
-
 <div class="top-bar sticky" data-sticky-container data-sticky data-options="marginTop:0;" >
 
     <p class="pnatchev "></p>
@@ -39,12 +45,24 @@ limitations under the License.
   <div class="dropdown-pane" id="responsive-menu" data-dropdown data-auto-focus="true" >
       <div data-smooth-scroll><a href="#home"><span>Home</span></a></div>
       <div data-smooth-scroll><a href="#about"><span>About</span></a></div>
-      <div data-smooth-scroll><a href="#portfolio"><span>Portfolio</span></a></div>
+      <div><a href="portfolio.html"><span>Portfolio</span></a></div>
       <div data-smooth-scroll><a href="#contact"><span>Contact</span></a></div>
       <div><a href="https://github.com/PNatchev" target="_blank"><span>Github</span></a></div>
   </div>
 
 </div>
+
+<div class="ng-view"></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+$routeProvider
+.when("/portfolio", {
+    templateUrl : "portfolio.html"
+});
+});
+</script>
 
 
 
@@ -209,28 +227,28 @@ limitations under the License.
         <td></td>
         <td>PHP</td>
         <td>AngularJS</td>
-        <td>Cucumber</td>
+        <td>Intellij IDEA</td>
         <td></td>
       </tr>
       <tr>
         <td></td>
         <td>Javascript</td>
-        <td>Node.js</td>
-        <td>Intellij IDEA</td>
+        <td>jQuery</td>
+        <td>WampServer</td>
         <td></td>
       </tr>
       <tr>
         <td></td>
         <td>HTML5</td>
         <td></td>
-        <td>WampServer</td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td></td>
         <td>CSS3</td>
         <td></td>
-        <td>jQuery</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -445,355 +463,19 @@ a partner company by setting up their PC's and network. Integrated Chromebooks t
 <!-- About End -->
 
 <!-- Portfolio Start -->
-<div class="row topspace">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft fade">
-<h5 id="portfolio"><b>Portfolio</b></h5>
-</div>
-<div class="columns">
 
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row topspace fade">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns">
-<img class="thumbnail" src="images/deepsearch.png" width="100%;" alt="Deepweb like website.">
-
-</div>
-<div class="columns">
-  <a href="http://straightfunction.blogspot.com/">
-<img class="thumbnail" src="images/straightfunction.png" width="97.5%;" alt="Fashion website.">
-</a>
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-<!-- Portfolio Ends -->
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row fade">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-<h5><b>Deep Search</b></h5>
-
-</div>
-<div class="columns textalignleft">
-<h5><b>Straight Function</b></h5>
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row fade ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-Web browser with search queries with several working website links designed to go along with the film script.
-
-</div>
-<div class="columns textalignleft">
-Fashion website powered by Blogger. I integrated external HTML5, CSS, and Javascript to optimize the website.
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<!-- Portfolio Ends -->
-
-<!-- Portfolio Start -->
-<div class="row topspace">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row topspace">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns">
-<img class="thumbnail" src="images/srs.png" width="100%;" alt="srs documentation.">
-
-</div>
-<div class="columns fade">
-  <a href="http://homepages.neiu.edu/~prnatche/patatap/final/patatapfinal.html">
-<img class="thumbnail fade" src="images/patatap.png" width="100%;" alt="Patatap jQuery project.">
-</a>
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft fade">
-<h5><b>EGS Online</b></h5>
-
-</div>
-<div class="columns textalignleft fade">
-<h5><b>Patatap jQuery Project</b></h5>
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft fade">
-Created a gaming website SRS document for my writing intensive software engineering course. Download <a href="/images/srs.pdf" download>here</a>.
-
-</div>
-<div class="columns textalignleft fade">
-Coded an event triggered animation with sound by using HTML5, CSS3, jQuery.
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<!-- Portfolio Start -->
-<div class="row topspace">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row topspace">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns fade">
-  <a href="http://homepages.neiu.edu/~rcorder4/CS300Project2/index.html">
-<img class="thumbnail" src="images/interplanetarytravel.png" width="100%;" alt="interplanetarytravel website.">
-</a>
-</div>
-<div class="columns fade">
-<img class="thumbnail" src="images/acornado.jpg" width="89%;" alt="Mobile application">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft fade">
-<h5><b>Interplanetary Travel</b></h5>
-
-</div>
-<div class="columns textalignleft fade">
-<h5><b>Acornado</b></h5>
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft">
-
-</div>
-<div class="columns">
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-
-<div class="row ">
-  <div class="columns shrink">
-  </div>
-  <div class="columns">
-  <div class="row">
-<div class="columns textalignleft fade">
-Interplanetary Travel was a school project. Our goal was to create a website to allow people book tickets to resorts on different planets.
-
-</div>
-<div class="columns textalignleft fade">
-Android application created in Unity3D.
-
-</div>
-  </div>
-  </div>
-  <div class="columns shrink">
-  </div>
-</div>
-<hr>
-<div class="greyBG">
-<div class="row greyBG">
+<div class="transBG">
+<div class="row transBG">
 <div class="columns shrink">
 
 </div>
 
 
-<div class="columns textalignleft topspace greyBG " id="contact">
+<div class="columns textalignleft topspace transBG " id="contact">
 <h5><b>Contact</b></h5>
 natchev.plamen@gmail.com
 </div>
-<div class="columns shrink greyBG topspace">
+<div class="columns shrink transBG topspace">
   <h5><b>LinkedIn</b></h5>
   <a href="https://www.linkedin.com/in/plamen-natchev">https://www.linkedin.com/in/plamen-natchev/</a>
 </div>
@@ -806,19 +488,19 @@ natchev.plamen@gmail.com
 
 
 <!-- Footer -->
-<div class="greyBG">
-<div class="row greyBG">
-  <div class="columns shrink greyBG">
+<div class="transBG">
+<div class="row transBG">
+  <div class="columns shrink transBG">
   </div>
-  <div class="columns greyBG" style="text-align: center;">
+  <div class="columns transBG" style="text-align: center;">
     <hr>
     Copyright © pnatchev.com
 
   </div>
-  <div class="columns shrink greyBG">
+  <div class="columns shrink transBG">
   </div>
 </div>
-<div style="height: 2vw;" class="greyBG"></div>
+<div style="height: 2vw;" class="transBG"></div>
 </div>
 <!-- Footer -->
     <!-- End project -->
